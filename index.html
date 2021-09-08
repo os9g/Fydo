@@ -136,7 +136,8 @@
                         <p>Please enter a valied email</p>
                     </div>
                     
-                    <form  method="POST" name="email" data-netlify="true" id="form" onsubmit="return false">
+                    <form netlify-honeypot="bot-field" method="POST" name="email" data-netlify="true" id="form" onsubmit="return false">
+                        <input type="hidden" name="form-name" value="contact">
                         <div class="flex">
                             <input id='email'  type="text" placeholder="email@example.com">
                             <input id="submit" type='submit' value="Get Started For Free" onclick="Value()" >

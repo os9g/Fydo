@@ -5,9 +5,8 @@ function validateEmail(email) {
   return re.test(email)
 }
 function Value() {
-  console.log(val)
   val = document.querySelector('#email').value
-  console.log(val)
+
   if (validateEmail(val) === true) {
     document.querySelector('#alert').innerHTML = ''
   } else {
