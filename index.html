@@ -133,11 +133,14 @@
                     <h1>Get early access today</h1>
                     <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
                     <div class="alert">
-                        <p>Please enter a valied email</p>
+                        <p></p>
                     </div>
                     
                     <form netlify-honeypot="bot-field" method="POST" name="email" data-netlify="true" id="form" onsubmit="return false">
                         <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden">
+                            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
                         <div class="flex">
                             <input id='email'  type="text" placeholder="email@example.com">
                             <input id="submit" type='submit' value="Get Started For Free" onclick="Value()" >
